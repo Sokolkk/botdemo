@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+    <topic name = "?">
+    <category>
+        <pattern>^ how much ^</pattern>
+        <template>
+        <srai>ANSWER4</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ <iset words= "acceptable, what, price, no, ok, okay, good, yes, perfectly, fine, reasonable, fair"/>  ^</pattern>
+        <template>
+        <srai>ANSWER4</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+
+    </topic>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>

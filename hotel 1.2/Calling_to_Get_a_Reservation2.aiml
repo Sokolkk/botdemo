@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <topic name = "your name">
+    <category>
+        <pattern>^ My name is *</pattern>
+        <template>
+
+            <random>
+                <li>Hello  <set name = "username"> <formal> <star index="2"/> </formal>	</set>! My name is EngSy. How many days will you stay at our hotel, sir? Rooms are currently available for a maximum of 7 days.</li>
+                <li>Hi, <set name = "username"> <formal> <star index="2"/> </formal> </set>! I'm EngSy, at your service. How many days will you stay at our hotel? Rooms are currently available for a maximum of 7 days.</li>
+                <li>Hi, <set name = "username"> <formal> <star index="2"/> </formal> </set>. My name is EngSy. How many days will you stay at our hotel? Rooms are currently available for a maximum of 7 days.</li>
+                <li>It's a pleasure  <set name = "username"> <formal> <star index="2"/> </formal> </set>. My name is EngSy. How many days will you stay at our hotel? Rooms are currently available for a maximum of 7 days.</li>
+                <li><set name = "username"> <formal> <star index="2"/> </formal> </set>, I'm EngSy, and I run the front desk. Please tell me how many days will you stay at our hotel? Rooms are currently available for a maximum of 7 days.</li>
+                <li>It's a pleasure to assist you, <set name = "username"> <formal> <star index="2"/> </formal> </set>. Please tell me how many days will you stay at our hotel, sir? Rooms are currently available for a maximum of 7 days.</li>
+            </random>
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ I am *</pattern>
+        <template>
+
+            <random>
+                <li>Hello  <set name = "username"> <formal> <star index="2"/> </formal>	</set>! My name is EngSy. How many days will you stay at our hotel, sir? Rooms are currently available for a maximum of 7 days.</li>
+                <li>Hi, <set name = "username"> <formal> <star index="2"/> </formal> </set>! . I'm EngSy, at your service. How many days will you stay at our hotel? Rooms are currently available for a maximum of 7 days.</li>
+                <li>Hi, <set name = "username"> <formal> <star index="2"/> </formal> </set>. My name is EngSy. How many days will you stay at our hotel? Rooms are currently available for a maximum of 7 days.</li>
+                <li>It's a pleasure  <set name = "username"> <formal> <star index="2"/> </formal> </set>. My name is EngSy. How many days will you stay at our hotel? Rooms are currently available for a maximum of 7 days.</li>
+                <li><set name = "username"> <formal> <star index="2"/> </formal> </set>, I'm EngSy, and I run the front desk. Please tell me how many days will you stay at our hotel? Rooms are currently available for a maximum of 7 days.</li>
+                <li>It's a pleasure to assist you, <set name = "username"> <formal> <star index="2"/> </formal> </set>. Please tell me how many days will you stay at our hotel, sir? Rooms are currently available for a maximum of 7 days.</li>
+            </random>
+
+        </template>
+    </category>
+    </topic>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>

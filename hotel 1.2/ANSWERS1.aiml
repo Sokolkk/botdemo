@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+        <think><set name="hour"><date format="%H"/></set></think>
+        <condition name="hour">
+            <li value="00">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="01">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="02">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="03">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="04">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="05">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="06">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="07">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="08">Good morning. <set name = "topic"> Do you need a room? </set></li>
+            <li value="09">Good morning. <set name = "topic"> Do you need a room? </set></li>
+            <li value="10">Good morning. <set name = "topic"> Do you need a room? </set></li>
+            <li value="11">Good morning. <set name = "topic"> Do you need a room? </set></li>
+            <li value="12">You're a bit late. It's lunchtime here. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="13">Good afternoon. <set name = "topic"> Do you need a room? </set></li>
+            <li value="14">Good afternoon. <set name = "topic"> Do you need a room? </set></li>
+            <li value="15">Good afternoon. <set name = "topic"> Do you need a room? </set></li>
+            <li value="16">Good afternoon. <set name = "topic"> Do you need a room? </set></li>
+            <li value="17">Good evening. <set name = "topic"> Do you need a room? </set></li>
+            <li value="18">Good evening. <set name = "topic"> Do you need a room? </set></li>
+            <li value="19">Good evening. <set name = "topic"> Do you need a room? </set></li>
+            <li value="20">Good evening. <set name = "topic"> Do you need a room? </set></li>
+            <li value="21">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="22">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+            <li value="23">Hello. We are closed. Good night. <set name = "topic"> Do you need a room now? </set></li>
+        </condition>
+    </template>
+</category>
+
+    <category>
+        <pattern>ANSWER0</pattern>
+        <template>
+            Sorry, I would love to help you, but we are closed now. We work from 8-12 and 13-20. Come during business hours.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWER1</pattern>
+        <template>
+            <random>
+                <li>That should be no problem. May I have <set name = "topic"> your name </set>, please?</li>
+                <li>No problem at all. Could I have <set name = "topic"> your name </set>, please?</li>
+                <li>Not a problem. May I have <set name = "topic"> your name </set>, please?</li>
+                <li>That's no problem at all. May I have <set name = "topic"> your name </set>, please?</li>
+                <li>That won't be a problem. Could you please tell me <set name = "topic"> your name </set>?</li>
+                <li>I assure you, that's not a problem. What is <set name = "topic"> your name </set>, please?</li>
+            </random>
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWER2</pattern>
+        <template>
+            <random>
+                <li>Hello  <set name = "username"> <formal> <star index="2"/> </formal>	</set>! My name is EngSy. What days do you need that reservation, sir?</li>
+                <li>Hi, <set name = "username"> <formal> <star index="2"/> </formal> </set>! . I'm EngSy, at your service. When do you need the room?</li>
+                <li>Hi, <set name = "username"> <formal> <star index="2"/> </formal> </set>. My name is EngSy. Could you tell me when you need the room?</li>
+                <li>It's a pleasure  <set name = "username"> <formal> <star index="2"/> </formal> </set>. My name is EngSy. What days will you need a room?</li>
+                <li><set name = "username"> <formal> <star index="2"/> </formal> </set>, I'm EngSy, and I run the front desk. Please tell me the days you'll be here</li>
+                <li>It's a pleasure to assist you, <set name = "username"> <formal> <star index="2"/> </formal> </set>. Please tell me when you'll be needing the room, sir.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWER3</pattern>
+        <template>
+
+            <random>
+                <li>Ok. Our room rates recently went up. Is that okay with you, Mr. <get name = "username"/><set name = "topic">?</set></li>
+                <li>Ok. We have new room rates, sir. Will that be acceptable to you?</li>
+                <li>Ok. Perhaps you didn't know that we have new room rates. Do you find that acceptable, sir<set name = "topic">?</set></li>
+                <li>Ok. One minor problem, sir. Our prices are now slightly higher. Is that acceptable, sir<set name = "topic">?</set></li>
+                <li>Ok. We recently changed many things here, sir, including our prices. Do you mind, sir<set name = "topic">?</set></li>
+                <li>Ok. Sir, our room prices are slightly higher than you may have thought. Will that be okay<set name = "topic">?</set></li>
+            </random>
+
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWER4</pattern>
+        <template>
+
+            <random>
+                <li>Each night will be $<set name = "topic">308</set>.</li>
+                <li>It's $<set name = "topic">308</set> a night.</li>
+                <li>The price per night is $<set name = "topic">308</set>.</li>
+                <li>It'll be $<set name = "topic">308</set> nightly.</li>
+                <li>The price will be $<set name = "topic">308</set> a night.</li>
+                <li>Only $<set name = "topic">308</set> per night, before taxes, of course.</li>
+            </random>
+
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWER5</pattern>
+        <template>
+
+            <random>
+                <li>Wonderful! Do you prefer a <set name = "topic">smoking</set> or nonsmoking room?</li>
+                <li>Great! Would you prefer <set name = "topic">smoking</set> or nonsmoking?</li>
+                <li>Fantastic! Would you like a <set name = "topic">smoking</set> or nonsmoking room?</li>
+                <li>Good! Now, sir, do you have a preference for <set name = "topic">smoking</set> or nonsmoking?</li>
+                <li>Very good. Now, Mr. <get name = "username"/>, about the room, <set name = "topic">smoking</set> or nonsmoking?</li>
+                <li>Now, as for the room, sir, do you prefer <set name = "topic">smoking</set> or nonsmoking?</li>
+            </random>
+
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWER6</pattern>
+        <template>
+
+            <random>
+                <li>Next question: Is a <set name = "topic">queen-size</set> bed okay?</li>
+                <li>Nonsmoking. Now, is a <set name = "topic">queen-size</set> bed okay?</li>
+                <li>That'll be nonsmoking. Now, do you approve of a single <set name = "topic">queen-size</set> bed?</li>
+                <li>I hear you, sir. Nonsmoking. Now, about the bed, is a <set name = "topic">queen-size</set> okay?</li>
+                <li>Nonsmoking. Now, sir, does a single <set name = "topic">queen-size</set> bed meet your approval?</li>
+            </random>
+
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWER7</pattern>
+        <template>
+            <random>
+                <li>Okay, Mr. <get name = "username"/>. Your reservation is in our computer. All we need now is a phone <set name = "topic">number</set>.</li>
+                <li>Great, Mr. <get name = "username"/>. Your reservation is confirmed. Now all I need is your phone <set name = "topic">number</set>.</li>
+                <li>I'm happy to hear that, sir. Your reservation is all set except for your phone <set name = "topic">number</set>.</li>
+                <li>Okay, sir, let me reserve those dates, there. Now, if you'll just tell me your phone <set name = "topic">number</set>.</li>
+                <li>One more second, sir. Your reservation is now verified, so all I need is your phone <set name = "topic">number</set>.</li>
+                <li>Queen, nonsmoking. Okay, sir, your room is reserved. Now if you'll just give me your phone <set name = "topic">number</set>.</li>
+            </random>
+
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWER8</pattern>
+        <template>
+            <srai>DATE</srai>.
+            <random>
+                <li>Thank you, Mr. <get name = "username"/>. We look forward to seeing you!</li>
+                <li>Thank you so much, Mr. <get name = "username"/>. We look forward to seeing you!</li>
+                <li>Thank you for doing business with us, Mr. <get name = "username"/>.</li>
+                <li>Thank you so much for choosing our hotel, Mr. <get name = "username"/>!</li>
+                <li>Okay, Mr. <get name = "username"/>, we look forward to seeing you!</li>
+                <li>Thank you for making a reservation with us. We look forward to seeing you, Mr. <get name = "username"/>!</li>
+            </random>
+
+        </template>
+    </category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>

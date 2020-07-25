@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <topic name = "number">
+    <category>
+        <pattern>^ My ^ number ^</pattern>
+        <template>
+        <srai>ANSWER8</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ number is ^</pattern>
+        <template>
+        <srai>ANSWER8</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+    </topic>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>

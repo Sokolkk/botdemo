@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>^ <iset words= "start, go, Unit, EXERCISE, EXERCISES, today, hi, hello, morning, night, restart, afternoon, evening, lunchtime"/> ^</pattern>
+        <template>
+        <srai>HELLO</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+
+
+
+
+
+
+
+
+
+</aiml>

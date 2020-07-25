@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <topic name = "308">
+    <category>
+        <pattern>^ <iset words= "ok, okay, good, yes, perfectly, fine, reasonable, fair"/> ^</pattern>
+        <template>
+        <srai>ANSWER5</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ not bad ^</pattern>
+        <template>
+        <srai>ANSWER5</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ <iset words= "no, terrible, horrible, awful, dire"/> ^</pattern>
+        <template>
+        <srai>ANSWERNEG1</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+    </topic>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>

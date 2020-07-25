@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <topic name = "queen-size">
+    <category>
+        <pattern>^ <iset words= "yes, fine, great, good, ok"/> ^</pattern>
+        <template>
+        <srai>ANSWER7</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ <iset words= "no, terrible, horrible, awful, dire"/> ^</pattern>
+        <template>
+        <srai>ANSWERNEG3</srai>
+        <extension path="programy.nlp.grammar2.extension.WordNetExtension"><sentence><input  /></sentence></extension>
+        </template>
+    </category>
+    </topic>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>

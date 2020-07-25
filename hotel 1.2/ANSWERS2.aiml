@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <category>
+        <pattern>ANSWERNEG0</pattern>
+        <template>
+            Well, if you need a room, we work from 8-12 and 13-20. Good luck.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWERNEG1</pattern>
+        <template>
+            <random>
+                <li>Look for another hotel. Try a different choice next time.</li>
+                <li>Have a nice day. Try a different choice next time.</li>
+                <li>Go away. Try a different choice next time.</li>
+                <li>There are no such places. Try a different choice next time.</li>
+                <li>We are closed. Try a different choice next time.</li>
+            </random>
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWERNEG2</pattern>
+        <template>
+            <random>
+                <li>We do not like those who smoke, go <set name = "topic">away</set>. Try a different choice next time.</li>
+                <li>Look for another hotel. Go <set name = "topic">away</set>. Try a different choice next time.</li>
+                <li>Go <set name = "topic">away</set>. Have a nice day. Try a different choice next time.</li>
+                <li>Go <set name = "topic">away</set>. Try a different choice next time.</li>
+                <li>There are no such places. Go <set name = "topic">away</set>. Try a different choice next time.</li>
+                <li>We are closed. Go <set name = "topic">away</set>. Try a different choice next time.</li>
+            </random>
+
+
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANSWERNEG3</pattern>
+        <template>
+            <random>
+                <li>Look for another hotel. Try a different choice next time.</li>
+                <li>Have a nice day. Try a different choice next time.</li>
+                <li>Go away. Try a different choice next time.</li>
+                <li>There are no such places. Try a different choice next time.</li>
+                <li>We are closed. Try a different choice next time.</li>
+            </random>
+
+        </template>
+    </category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>
