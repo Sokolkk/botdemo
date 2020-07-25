@@ -1,5 +1,5 @@
-# bot with english grammar check in dialog
-### Trying to adapt some exercises in dialogs from English Grammar in Use_Raymond Murphy_2nd ed
+# bot with english grammar check in dialog (Python/AIML)
+
 ### 1. Install in the programy folder on the same directory level
 
 ### 2. Install programy requirements, described in the library 
